@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_5aa2995f6830e7b0095dd4d0b5e30837c8f37872.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adityaponnada/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_be1e605c690f9260542d108e3a4c45306987fd28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_e1b42711483a05f641a1bff67625fe5e83fae807.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_c53bf10e190c51ec63c5b67761e59e87e09cc39c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_4d7e7fcb90a1dcfabaa232f7a8419995c4c1c0e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/adityaponnada/AndroidStudioProjects/hinf5300/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_3e4288dde8da0c1ab575724abec1d6cad36d3c0f.jar" />
+    </item>
+
+</items>

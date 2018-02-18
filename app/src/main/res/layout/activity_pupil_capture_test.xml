@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="edu.neu.hinf5300.concussionsidelineresponse.PupilCaptureTest">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <SurfaceView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:fadingEdgeLength="@dimen/activity_horizontal_margin"
+        android:id="@+id/surface_camera"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:src = "@drawable/porthole1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            style="@style/InstructionFont"
+            android:text="@string/left_eye_text"
+            android:layout_gravity="top"
+            android:id="@+id/image_title"/>
+
+            <TextView
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flashText"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="10dp"
+                android:text="@string/capture_instructions"/>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/capture_button_text"
+        android:id="@+id/captureButton"
+        android:layout_gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        style="@style/ButtonStyle"/>
+
+    </FrameLayout>
+
+</LinearLayout>

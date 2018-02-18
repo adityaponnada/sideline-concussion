@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reaction_time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.hinf5300.concussionsidelineresponse.ReactionTimeActivity">
+
+    <RelativeLayout
+        android:id="@+id/reaction_time_hand_to_player_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/reaction_time_hand_to_player_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm the Player"
+            style="@style/ButtonStyle"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/reaction_time_hand_to_player_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reaction_time_instructions_hand_to_player"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            style="@style/InstructionFont"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reaction_time_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/timer_TextView"
+            android:layout_below="@+id/reaction_time_instructions_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            style ="@style/InstructionFont" />
+
+
+        <AbsoluteLayout
+            android:id="@+id/reaction_time_absolute_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timer_TextView"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/target_Button"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:background="@drawable/reddot"
+                android:padding="40sp"
+                android:layout_margin="20sp"
+                android:visibility="gone" />
+
+        </AbsoluteLayout>
+
+        <Button
+            android:id="@+id/reaction_time_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start!"
+            android:paddingTop="10sp"
+            android:visibility="visible"
+            style="@style/ButtonStyle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/reaction_time_instructions_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reaction_time_instructions_1"
+            android:gravity="left"
+            android:textSize="20sp"
+            style="@style/InstructionFont"
+            android:layout_above="@+id/reaction_time_start_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="37dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

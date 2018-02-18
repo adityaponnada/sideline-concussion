@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_working_memory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.hinf5300.concussionsidelineresponse.WorkingMemoryActivity">
+
+
+    <TextView
+        android:id="@+id/working_memory_instructions_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/working_memory_instructions_text_1"
+        android:textSize="20sp"
+        style="@style/InstructionFont"/>
+
+    <TextView
+        android:id="@+id/words_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/working_memory_instructions_textview"
+        android:textSize="50sp"
+        android:paddingTop="60sp"
+        android:visibility="gone"
+        android:gravity="center_vertical|center_horizontal"
+        style="@style/InstructionFont"/>
+
+    <RelativeLayout
+        android:id="@+id/check_box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_below="@+id/working_memory_instructions_textview">
+
+        <CheckBox
+            android:id="@+id/check_box_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/check_box_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box_1" />
+        <CheckBox
+            android:id="@+id/check_box_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box_2" />
+        <CheckBox
+            android:id="@+id/check_box_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box_3" />
+        <CheckBox
+            android:id="@+id/check_box_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box_4" />
+        <CheckBox
+            android:id="@+id/check_box_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box_5" />
+        <CheckBox
+            android:id="@+id/check_box_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box_6" />
+        <CheckBox
+            android:id="@+id/check_box_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box_7" />
+
+        <Button
+            android:id="@+id/memory_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/check_box_8"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/working_memory_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start!"
+        style="@style/ButtonStyle"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second_working_memory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.hinf5300.concussionsidelineresponse.SecondWorkingMemoryActivity">
+
+
+    <TextView
+        android:id="@+id/swm_working_memory_instructions_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/swm_working_memory_instructions_text_1"
+        style="@style/InstructionFont"/>
+
+    <TextView
+        android:id="@+id/swm_words_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/swm_working_memory_instructions_textview"
+        android:textSize="50sp"
+        android:paddingTop="60sp"
+        android:visibility="gone"
+        android:gravity="center_vertical|center_horizontal"
+        style="@style/InstructionFont"/>
+
+    <RelativeLayout
+        android:id="@+id/swm_answers_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/swm_working_memory_instructions_textview">
+
+        <TextView
+            android:id="@+id/swm_single_word_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            style="@style/InstructionFont"
+            android:textAlignment="center"
+            android:padding="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/swm_answers_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swm_single_word_textview">
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/swm_memory_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swm_answers_radiogroup"
+            android:text="Submit"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            style="@style/ButtonStyle"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/swm_working_memory_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start!"
+        android:paddingTop="10sp"
+        android:visibility="visible"
+        style="@style/ButtonStyle"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

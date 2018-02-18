@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_symptom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.hinf5300.concussionsidelineresponse.SymptomActivity">
+
+
+    <TextView
+        android:id="@+id/symptom_tracker_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Symptom Checklist"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        style="@style/InstructionFont"/>
+
+    <RelativeLayout
+        android:id="@+id/symptoms_coach_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom_tracker_title_textview"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/symptom_coach_question_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Hello"
+            style="@style/InstructionFont"
+            />
+
+        <RadioGroup
+            android:id="@+id/symptom_coach_radiogroup_1"
+            android:layout_below="@+id/symptom_coach_question_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="radiogroup"
+            android:textColor="#000000">
+            <RadioButton
+                android:id="@+id/symptom_coach_q1_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="yes"
+                android:textColor="#000000"/>
+            <RadioButton
+                android:id="@+id/symptom_coach_q1_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textColor="#000000"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/symptom_coach_question_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/symptom_coach_radiogroup_1"
+            style="@style/InstructionFont"
+            />
+
+        <RadioGroup
+            android:id="@+id/symptom_coach_radiogroup_2"
+            android:layout_below="@+id/symptom_coach_question_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/symptom_coach_q2_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="yes"/>
+            <RadioButton
+                android:id="@+id/symptom_coach_q2_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="no"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/symptom_coach_question_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/symptom_coach_radiogroup_2"
+            style="@style/InstructionFont"
+            />
+
+        <RadioGroup
+            android:id="@+id/symptom_coach_radiogroup_3"
+            android:layout_below="@+id/symptom_coach_question_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/symptom_coach_q3_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="yes"/>
+            <RadioButton
+                android:id="@+id/symptom_coach_q4_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="no"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/symptom_coach_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@+id/symptom_coach_radiogroup_3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            style="@style/ButtonStyle"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/symptom_coach_to_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:paddingTop="40sp"
+        android:layout_below="@+id/symptom_tracker_title_textview">
+
+        <Button
+            android:id="@+id/symptom_coach_to_player_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Start"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/symptom_coach_to_player_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Now hand the phone to the player."
+            android:textSize="20sp"
+            android:textAlignment="center"
+            style="@style/InstructionFont"
+            android:layout_above="@+id/symptom_coach_to_player_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/symptoms_player_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom_tracker_title_textview"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/symptom_player_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/symptoms_player_instructions"
+            style="@style/InstructionFont" />
+
+        <ScrollView
+            android:id="@+id/symptoms_player_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symptom_player_instructions">
+
+            <LinearLayout
+                android:id="@+id/symptoms_player_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/player_symptom_continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Next"
+            android:layout_below="@+id/symptoms_player_scrollview"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

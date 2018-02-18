@@ -1,0 +1,6 @@
+Did the player lose consciousness?
+yes
+Does the player appear disoriented or confused?
+yes
+Does the player remember how the collision occurred?
+no

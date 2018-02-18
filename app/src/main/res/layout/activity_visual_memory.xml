@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_visual_memory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.hinf5300.concussionsidelineresponse.VisualMemoryActivity">
+
+    <TextView
+        android:id="@+id/viz_mem_instructions_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viz_mem_instructions_1"
+        style="@style/InstructionFont"/>
+
+    <RelativeLayout
+        android:id="@+id/viz_mem_start_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viz_mem_instructions_textview"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/viz_mem_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start!"
+            style="@style/ButtonStyle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viz_mem_answers_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viz_mem_instructions_textview"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingLeft="20dp">
+
+
+        <ImageButton
+            android:id="@+id/viz_mem_answers_radiobutton_imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorUnselectedButton"
+            android:padding="10dp" />
+        <ImageButton
+            android:id="@+id/viz_mem_answers_radiobutton_imageview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorUnselectedButton"
+            android:padding="10dp"
+            android:rotation="90"/>
+        <ImageButton
+            android:id="@+id/viz_mem_answers_radiobutton_imageview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorUnselectedButton"
+            android:padding="10dp"
+            android:rotation="180"/>
+        <ImageButton
+            android:id="@+id/viz_mem_answers_radiobutton_imageview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorUnselectedButton"
+            android:padding="10dp"
+            android:rotation="270"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/viz_mem_submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                style="@style/ButtonStyle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viz_mem_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/viz_mem_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:minWidth="80dp"
+            android:rotation="90"/>
+
+        <ImageView
+            android:id="@+id/viz_mem_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:minWidth="80dp" />
+
+        <ImageView
+            android:id="@+id/viz_mem_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:minWidth="80dp"
+            android:rotation="270"/>
+
+        <ImageView
+            android:id="@+id/viz_mem_image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:minWidth="80dp"
+            android:rotation="180"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

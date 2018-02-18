@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<LinearLayout
+		android:id="@+id/tandem_instructions_rl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/tandem_instructions_iv"
+			android:layout_width="match_parent"
+			android:layout_height="448dp"
+			android:background="@drawable/tandem"
+			android:layout_above="@+id/tandem_start_button"/>
+
+		<Button
+			android:id="@+id/tandem_start_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/tandem_instructions_iv"
+			android:textSize="20sp"
+			android:text="Got it!"
+			style="@style/ButtonStyle" />
+
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/semi_tandem_instructions_rl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="visible"
+		android:orientation="vertical"
+		android:weightSum="1">
+
+		<ImageView
+			android:id="@+id/semitandem_instructions_iv"
+			android:layout_width="match_parent"
+			android:layout_height="417dp"
+			android:background="@drawable/semitandem"
+			android:layout_above="@+id/semitandem_start_button"
+			android:layout_weight="0.97" />
+
+		<Button
+			android:id="@+id/semitandem_start_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/semitandem_instructions_iv"
+			android:textSize="20sp"
+			android:text="Got it!"
+			style="@style/ButtonStyle"/>
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/balance_test_fl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<edu.neu.hinf5300.concussionsidelineresponse.BalanceTest.view.LevelView
+			android:id="@+id/level"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+
+
+		<TextView
+			android:id="@+id/balance_test_tv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="top"
+			style="@style/InstructionFont"
+			android:text="After you hit start, keep the ball in the center of the target!"/>
+
+
+		<TextView
+			android:id="@+id/times_up_tv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="TIMES UP"
+			android:textStyle="bold"
+			android:textSize="40sp"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:textColor="@color/red"
+			android:visibility="gone"/>
+
+		<Button
+			android:id="@+id/start_balance_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|bottom"
+			android:text="Start"
+			android:textSize="20sp"
+			android:padding="5dp"
+			style="@style/ButtonStyle"
+			android:visibility="visible"/>
+
+	</FrameLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.hinf5300.concussionsidelineresponse.RosterActivity">
+
+    <LinearLayout
+        android:id="@+id/toggle_button_roster_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+
+        <Button
+            android:id="@+id/current_players_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Players"
+            android:layout_weight="1"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/add_player_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below = "@+id/current_players_tv"
+            android:text="Add Player"
+            android:layout_weight="1"
+            style="@style/ButtonStyle"
+            />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/add_players_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/toggle_button_roster_layout">
+
+        <TextView
+            android:id="@+id/first_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="First Name:"
+            style="@style/InstructionFont"/>
+
+        <EditText
+            android:id="@+id/first_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_name_tv"
+            android:hint="enter first name"/>
+
+        <TextView
+            android:id="@+id/last_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/first_name_et"
+            android:text="Last Name:"
+            style="@style/InstructionFont"/>
+
+        <EditText
+            android:id="@+id/last_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/last_name_tv"
+            android:hint="enter last name"/>
+
+        <TextView
+            android:id="@+id/pcp_number_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/last_name_et"
+            android:text="PCP's Number:"
+            style="@style/InstructionFont"/>
+
+        <EditText
+            android:id="@+id/pcp_number_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pcp_number_tv"
+            android:hint="enter PCP's number"/>
+
+
+        <Button
+            android:id="@+id/save_player_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/pcp_number_et"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/current_players_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toggle_button_roster_layout">
+
+        <TextView
+            android:id="@+id/no_players_roster_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You must add players to the roster."
+            style="@style/InstructionFont"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/main_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Main Menu"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            style="@style/ButtonStyle"/>
+
+        <ScrollView
+            android:id="@+id/current_players_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/test_results_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_player_button">
+
+            </RadioGroup>
+
+         </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Sideline</string>
+    <string name="measurement_title">Pupil measurement instructions</string>
+    <string name="concussion_assessment_name">Concussion</string>
+    <string name="continue_button_text">Continue</string>
+    <string name="reset">Retake Images</string>
+    <string name="process">Submit Images</string>
+    <string name="clicker">Measure Pupil</string>
+    <string name="continueText">CONTINUE</string>
+    <string name="calltext">CALL PCP</string>
+
+    <string name="left_eye_text">STEP 1: CAPTURE RIGHT EYE</string>
+    <string name="eye_text_crop">1. ZOOM -- 2. MEASURE -- 3. SUBMIT</string>
+    <string name="capture_instructions">Make sure you can see the right eye clearly in the circle below</string>
+    <string name="capture_button_text">CAPTURE WITHOUT FLASH</string>
+    <string name="testButton_text">TEST</string>
+    <string name="testImages">TEST IMAGES</string>
+
+    <string name="reaction_time_instructions_1"><b>Instructions:</b>\nAfter you press start, dots will appear on the screen.
+        Hit the <b>RED</b> dots as quickly as you can!</string>
+    <string name="reaction_time_instructions_2"><b>Instructions:</b>\nHit the <b>RED</b> dots!</string>
+    <string name="reaction_time_instructions_hand_to_player">To start the Baseline test, hand the phone to the player.</string>
+    <string name="working_memory_instructions_text_1"><b>Instructions:</b>\nAfter you press start, words will begin to appear on the screen.
+        Do your best to remember as many words as possible.</string>
+    <string name="working_memory_instructions_text_2"><b>Instructions:</b>\nSelect all words you remember from the
+        list you just saw. Once you have selected all of the words you remember, hit submit.</string>
+    <string name="swm_working_memory_instructions_text_1"><b>Instructions:</b>\nAfter you press start, pairs of words will begin to appear on the screen.
+        Do your best to remember each pair of words.</string>
+    <string name="swm_working_memory_instructions_text_2"><b>Instructions:</b>\nRemember these word pairs.</string>
+    <string name="swm_working_memory_instructions_text_3"><b>Instructions:</b>\nSelect the word that was paired with the following word.
+        When you are sure of your answer, hit submit.</string>
+    <string name="symptoms_player_instructions">On a scale of 0-10, 0 meaning not at all, 10 meaning the worst you can imagine,
+         how much are the following symptoms bothering you?\n</string>
+    <string name="viz_mem_instructions_1"><b>Instructions:</b>\nRemember each of the four images on this screen\n</string>
+    <string name="viz_mem_instructions_2"><b>Instructions:</b>\nWhich of the following images was on the previous screen?
+        Make sure to pick the image with the same orientation as in the previous screen.</string>
+
+    <!-- Concussion Detection Strings-->
+    <string name="concussion_detected_after_symptoms">Based on your responses to the symptom survey, it is likely that the player has a concussion.</string>
+    <string name="no_concussion_detected_after_symptoms">Based on your responses to the symptom survey, no concussion has been detected. Click continue to move to the next part of the assessment.</string>
+    <string name="concussion_detected_after_pupil">The player is likely to have a concussion. Please seek medical attention right away.</string>
+    <string name="no_concussion_detected_after_pupil">Based on the pupil images, no concussion has been detected. Click continue to move to the next part of the assessment.</string>
+    <string name="concussion_detected_after_memory_tests">"Based on the results of the tests, it is likely that the player is concussed."</string>
+    <string name="no_concussion_detected_after_memory_test">Based on the results of the tests, no concussion has been detected.
+                    Concussion symptoms may not appear for 48 hours.
+        Therefore, continue to monitor the player for symptoms for the next 48 hours.</string>
+    <string name="concussion_detected_contact_pcp">Click on the "call PCP" button to dial the PCP emergency number. A medical professional is needed to
+        determine if the player needs further evaluation and treatment.</string>
+    <string name="urgent"><b>URGENT\n</b></string>
+
+    <!-- Pupil Instruction Strings-->
+    <string name="pupil_instructions">In the next page, you will be taking images of the player eyes. Place the phone close to player nose and make sure player eye is seen in the preview circle below. Then click continue</string>
+    <string name="measurement_instructions">In the bext page, you will be measuring sizes of pupils. You can zoom-in using double tap to view pupils of your preferred size. Next click on measure pupil. Use the cropping tool to match the size of pupil on screen. Submit the image and move to the next image. </string>
+
+
+    <!-- Balance Strings-->
+    <string name="name">Bubble</string>
+    <string name="reset_balance">Reset</string>
+    <string name="not_supported">Orientation not supported</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="ok">Ok</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="calibrate_info"></string>
+    <string name="calibrate_title">Calibrate your phone</string>
+    <string name="calibrate_message">Put any side (including the back) of your Android device on a flat horizontal surface and press the Calibrate button.\n\nOr reset the calibration for all the phone sides.</string>
+    <string name="calibrate_again_title">You must re-calibrate</string>
+    <string name="calibrate_again_message">The sensor change requires re-calibration of the phone.</string>
+    <string name="calibrate_saved">Custom calibration saved !</string>
+    <string name="calibrate_failed">Calibration failed !</string>
+    <string name="calibrate_restored">Original calibration restored !</string>
+    <string name="preferences">Settings</string>
+    <string name="preference_show_angle">Show numeric angle</string>
+    <string name="preference_show_angle_summary">Display angle value(s) on screen</string>
+    <string name="preference_display_type">Display type</string>
+    <string name="preference_sound">Sound effects</string>
+    <string name="preference_sound_summary">Play sound when level</string>
+    <string name="preference_lock">Locking</string>
+    <string name="preference_lock_summary">Allow level orientation locking</string>
+    <string name="preference_viscosity">Viscosity</string>
+    <string name="preference_economy">Eco mode</string>
+    <string name="preference_economy_summary">Less smooth animations\nbut preserves the battery life</string>
+    <string name="angle">Angle</string>
+    <string name="lock_info">tap to lock level orientation</string>
+    <string name="inclination">Inclination</string>
+    <string name="roof_pitch">Roof pitch</string>
+    <string name="roof_pitch_summary">Inches of rise per foot of run\n3 &#126; 14°</string>
+    <string name="angle_summary">Angle in degrees</string>
+    <string name="inclination_summary">Inclination in percents\n100&#37; &#126; 45°</string>
+    <string name="viscosity_low">Low</string>
+    <string name="viscosity_medium">Medium</string>
+    <string name="viscosity_high">High</string>
+    <string name="viscosity_low_summary">Low viscosity\nBubble moves faster</string>
+    <string name="viscosity_medium_summary">Medium viscosity\nBubble moves normaly</string>
+    <string name="viscosity_high_summary">High viscosity\nBubble moves slowly</string>
+    <string name="config_switch_vertically">Invert vertically</string>
+    <string name="config_switch_horizontally">Invert horizontally</string>
+    <string name="config_rotate_axis">Rotate axis</string>
+
+</resources>
+
+
